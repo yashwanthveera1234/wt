@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html >
+  <head>
+  </head>
+  <body>
+    <textarea name="string" id="tarea"></textarea>
+    <input type="button" name="sub" value="submit" onClick="countWCL()">
+    <script>
+function countWCL() {
+var textarea=document.getElementById("tarea");
+var text = textarea.value;
+alert("Words :"+  (text.split(/\b\S+\b/).length - 1))
+alert("no char :"+(((text.length) - (text.split(/\b\S+\b/).length)+1)))
+alert("no lines"+text.split("\n").length)
+ }
+</script>
+  </body>
+</html>
